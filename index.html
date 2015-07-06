@@ -15,7 +15,7 @@
 				width: 12em;
 				height: 5em;
 				top: 50%;
-				margin-top: -8.5em;
+				margin-top: -5.5em;
 				text-align: center;
 			}
 			#name {
@@ -26,29 +26,33 @@
 				top: 0.35em;
 				letter-spacing: -0.075em;
 			}
-			#icons {
+			#links {
 				background-color: #333;
-				height: 60px;
-				padding-top: 1em;
-				padding-bottom: 1em;
+				font-size:1.5em;
+				margin-top: 0em;
+				padding-top: 0.25em;
+				padding-bottom: 0.25em;
+				list-style-type: none;
 			}
-			#icons img {
-				border-style: none;
-				margin: 0em 1em;
+			#links li {
+				display: inline;
+				padding-left: 1em;
+				padding-right: 1em;
 			}
-			#icons a { text-decoration: none; }
+			#links a { text-decoration: none; }
+			#links a:link { color: #33F; }
+			#links a:visited { color: #838; }
+			#links a:hover, #links a:active { color: #F33; }
 		</style>
 	</head>
 	<body>
 		<div id="content">
 			<div id="name">Carl&nbsp;Fink</div>
-			<div id="icons">
-				<!--
-					The following is all on one line to avoid having a space character between icons.
-					This allows the spacing to be controlled more precisely via CSS.
-				-->
-				<a href="http://www.facebook.com/cafink"><img src="facebook.png" width="60" height="60" alt="Facebook" /></a><a href="http://www.twitter.com/cafink"><img src="twitter.png" width="60" height="60" alt="Twitter" /></a><a href="http://plus.google.com/115104454182603900881"><img src="gplus.png" width="60" height="60" alt="Google Plus" /></a>
-			</div>
+			<ul id="links">
+				<li><a href="Carl%20Fink%20resume.pdf">r&eacute;sum&eacute;</a></li>
+				<li><a href="http://github.com/cafink">GitHub</a></li>
+				<li><a href="mailto:cafink@gmail.com">e-mail</a></li>
+			</ul>
 		</div>
 	</body>
 </html>
