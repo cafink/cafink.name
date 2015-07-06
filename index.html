@@ -6,36 +6,45 @@
 		<style type="text/css">
 			body {
 				background-color: #000;
-				font-family: Arial Black;
-				font-size: 2em;
-				margin-left: 0px;
-				margin-right: 0px;
+				font-family: "Arial Black", Arial, sans-serif;
+				margin: 0px;
 			}
-			#tag {
+			#content {
 				position: absolute;
 				min-width: 100%;
 				width: 12em;
-				height: 4.2em;
+				height: 5em;
 				top: 50%;
-				margin-top: -2.6em; /* Half the height, plus the top padding. */
-				color: #CCC;
-				background-color: #333;
+				margin-top: -8.5em;
 				text-align: center;
-				padding-top: 0.5em;
-				padding-bottom: 0.5em;
 			}
-			#tag .name { font-weight: bold; }
-			#tag a { text-decoration: none; }
-			#tag a:link { color: #33F; }
-			#tag a:visited { color: #838; }
-			#tag a:hover, #tag a:active { color: #F33; }
+			#name {
+				color: #333;
+				font-size: 4em;
+				font-weight: bold;
+				position: relative;
+				top: 0.35em;
+				letter-spacing: -0.075em;
+			}
+			#icons {
+				background-color: #333;
+				height: 60px;
+				padding-top: 1em;
+				padding-bottom: 1em;
+			}
+			#icons img {
+				border-style: none;
+				margin: 0em 1em;
+			}
+			#icons a { text-decoration: none; }
 		</style>
 	</head>
 	<body>
-		<div id="tag">
-			<span class="name">Carl&nbsp;Fink</span><br />
-			<a href="http://cafink.blogspot.com">Insect&nbsp;Politics</a><br />
-			<a href="http://www.twitter.com/cafink">Follow&nbsp;me&nbsp;on&nbsp;Twitter!</a>
+		<div id="content">
+			<div id="name">Carl&nbsp;Fink</div>
+			<div id="icons">
+				<a href="http://cafink.blogspot.com"><img src="blogger.png" width="60" height="60" alt="Blogger" /></a><a href="http://www.facebook.com/cafink"><img src="facebook.png" width="60" height="60" alt="Facebook" /></a><a href="http://www.twitter.com/cafink"><img src="twitter.png" width="60" height="60" alt="Twitter" /></a>
+			</div>
 		</div>
 	</body>
 </html>
