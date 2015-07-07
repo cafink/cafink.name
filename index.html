@@ -32,6 +32,12 @@
 				margin-top: 0em;
 				padding: 0.25em 0em;
 				list-style-type: none;
+				/* Set the z-index to place the #links UL above the
+				   #name div; otherwise, the bottom of the #name div
+				   covers the top of the links, preventing them from
+				   being clicked in that area. */
+				position: relative;
+				z-index: 1;
 			}
 			#links li {
 				display: inline;
